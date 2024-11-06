@@ -12,3 +12,4 @@ def reemplazar_par_impar(lista_numeros):
 lista = [1, 2, 3, 4, 5]
 resultado = reemplazar_par_impar(lista)
 print(f"Lista con 'par' e 'impar': {resultado}")
+#
