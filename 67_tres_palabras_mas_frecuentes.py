@@ -8,6 +8,5 @@ def tres_palabras_mas_frecuentes(texto):
     contador = Counter(palabras)
     return contador.most_common(3)
 
-# Ejemplo de uso
 print(tres_palabras_mas_frecuentes("python es genial y aprender python es divertido porque python es potente"))  
-# [('python', 3), ('es', 3), ('genial', 1)]
+
