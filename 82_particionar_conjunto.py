@@ -1,20 +1,27 @@
 """
-Dado un conjunto de números, determina si se puede dividir en dos subconjuntos con la misma suma.
+Implementa el algoritmo de Bellman-Ford para encontrar los caminos más cortos desde un nodo origen.
 """
-def puede_particionar(nums):
-    total = sum(nums)
-    if total % 2 != 0:
-        return False
-    objetivo = total // 2
-    dp = [False] * (objetivo + 1)
-    dp[0] = True
+def bellman_ford(grafo, origen):
+    dist = {nodo: float('inf') for nodo in grafo}
+    dist[origen] = 0
 
-    for num in nums:
-        for j in range(objetivo, num - 1, -1):
-            dp[j] = dp[j] or dp[j - num]
+    for _ in range(len(grafo) - 1):
+        for nodo in grafo:
+            for vecino, peso in grafo[nodo]:
+                if dist[nodo] + peso < dist[vecino]:
+                    dist[vecino] = dist[nodo] + peso
 
-    return dp[objetivo]
+    for nodo in grafo:
+        for vecino, peso in grafo[nodo]:
+            if dist[nodo] + peso < dist[vecino]:
+                raise ValueError("El grafo contiene un ciclo negativo.")
+    return dist
 
 # Ejemplo de uso
-nums = [1, 5, 11, 5]
-print(puede_particionar(nums))  # True
+grafo = {
+    'A': [('B', 4), ('C', 2)],
+    'B': [('C', 1), ('D', 5)],
+    'C': [('D', 8)],
+    'D': []
+}
+print(bellman_ford(grafo, 'A'))
