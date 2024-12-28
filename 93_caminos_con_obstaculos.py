@@ -26,3 +26,4 @@ matriz = [
     [0, 0, 0]
 ]
 print(caminos_con_obstaculos(matriz))  # 2
+  
