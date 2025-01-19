@@ -13,5 +13,5 @@ def comprimir_rle(cadena):
         i += 1
     return ''.join(resultado)
 
-# Ejemplo de uso
+# Ejemplo de usoo
 print(comprimir_rle("aaabbcddd"))  # "a3b2c1d3"
