@@ -1,5 +1,5 @@
 """
-Implementa el algoritmo de la Mochila 0/1 para maximizar el valor total de objetos seleccionados sin exceder la capacidad.
+V2 Implementa el algoritmo de la Mochila 0/1 para maximizar el valor total de objetos seleccionados sin exceder la capacidad.
 """
 def mochila(capacidad, pesos, valores, n):
     dp = [[0] * (capacidad + 1) for _ in range(n + 1)]
