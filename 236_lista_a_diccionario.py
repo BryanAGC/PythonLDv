@@ -8,3 +8,4 @@ def lista_a_diccionario(lista):
 lista = [("a", 1), ("b", 2), ("c", 3)]
 resultado = lista_a_diccionario(lista)
 print(f"Diccionario resultante: {resultado}")
+#
