@@ -11,4 +11,4 @@ def contar_palabras(texto):
 texto = "hola mundo hola a todos en el mundo"
 print(contar_palabras(texto))  
 # {'hola': 2, 'mundo': 2, 'a': 1, 'todos': 1, 'en': 1, 'el': 1}
-#ts
+#tss2
