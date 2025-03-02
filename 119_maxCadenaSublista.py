@@ -8,5 +8,5 @@ def max_suma_sublista(lista):
         max_global = max(max_global, max_actual)
     return max_global
 
-# Ejemplo de uso
+# Ejemplo de usoo
 print(max_suma_sublista([-2, 1, -3, 4, -1, 2, 1, -5, 4]))  # 6 ([4, -1, 2, 1])
