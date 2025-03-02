@@ -8,3 +8,4 @@ def mcd(a, b):
 
 # Ejemplo de uso
 print(mcd(48, 18))  # 6
+#t
