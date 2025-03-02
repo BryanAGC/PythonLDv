@@ -8,3 +8,4 @@ def suma_primeros_n(n):
 n = 10
 resultado = suma_primeros_n(n)
 print(f"La suma de los primeros {n} números naturales es: {resultado}")
+#
